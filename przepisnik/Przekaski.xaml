@@ -1,0 +1,59 @@
+﻿<Window x:Class="przepisnik.Przekaski"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepisnik"
+        mc:Ignorable="d"
+        Title="Przekaski" Height="450" Width="580">
+    <Grid>
+
+        <StackPanel Grid.Column="1" Margin="5">
+            <Image Source="C:/Users/Ewa/Desktop/coreldraw/photoshop/projektc#/dgffd.jpg"  Margin="361,10,0,0" Height="195" RenderTransformOrigin="0.5,0.5"/>
+        </StackPanel>
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Top">
+                <Button Name="SzukajButton" Click="SzukajButton_Click" >Search</Button>
+               
+                <Button Name="Wyjdz" Content="Wyjdz" Click="Wyjdz_Click" />
+            </WrapPanel>
+            <FlowDocumentPageViewer Name="fdViewer">
+                <FlowDocument>
+                    <Paragraph FontSize="20">OWOCE ZAPIEKANE POD KRUSZONKĄ </Paragraph>
+                    <Paragraph>
+                        •	600 g owoców (truskawki, nektarynki, jabłka, brzoskwinie)
+•	8 łyżek syropu klonowego
+•	2 szklanki płatków owsianych
+•	3 łyżki soku z cytryny
+•	5 łyżek oleju kokosowego lub masła
+
+                    </Paragraph>
+                    <Paragraph>Piekarnik nagrzać do 200 stopni C. Owoce pozbawić pestek i szypułek, większe pokroić na kawałki. Ułożyć w naczyniu żaroodpornym i polać 3 łyżkami syropu klonowego.
+	W mini melakserze lub rozdrabniaczu chwilę pomiksować płatki owsiane z dodatkiem reszty syropu klonowego, soku z cytryny i oleju kokosowego lub masła, rozdrabniając płatki na mniejsze kawałeczki i łącząc je z dodatkami.
+	Powstałą kruszonkę ułożyć na owocach i wstawić do nagrzanego piekarnika. Piec przez 25 minut na złoty kolor.
+                    </Paragraph>
+                    <Paragraph/>
+                    <Paragraph/>
+                    <Paragraph FontSize="20">SALSA POMIDOROWA DO CHIPSÓW I NACHOS</Paragraph>
+                    <Paragraph>400 g puszka krojonych pomidorów
+1/4 zielonej papryki
+kilka kawałków (ok. 2 łyżki) marynowanej papryczki jalapeño (np. TAKIEJ)
+1/2 łyżeczki sproszkowanego czosnku
+sól i pieprz
+2 łyżki cukru
+3 łyżki octu spirytusowego
+2 cebulki szalotki
+1 łyżeczka mąki ziemniaczanej
+opcjonalnie: łyżka posiekanej kolendry</Paragraph>
+                    <Paragraph>Do rondelka włożyć pomidory z puszki wraz z całą zalewą, dodać pokrojoną w małą kosteczkę zieloną paprykę, odcedzoną i posiekaną jalapeño, czosnek, szczyptę soli i szczyptę pieprzu, cukier oraz ocet. Zagotować, następnie gotować bez przykrycia przez ok. 10 minut, co chwilę mieszając.
+Dodać obraną i drobno posiekaną cebulkę i gotować jeszcze przez ok. 2 minuty. Na koniec dodać mąkę ziemniaczaną (przez sitko), wymieszać i zagotować. Ostudzić przed podaniem. Opcjonalnie dodać kolendrę. Można przygotować wcześniej i trzymać w lodówce.</Paragraph>
+                </FlowDocument>
+                
+            </FlowDocumentPageViewer>
+
+
+        </DockPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="przepisnik.Kolacja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepisnik"
+        mc:Ignorable="d"
+        Title="Kolacja" Height="450" Width="580">
+    <Grid>
+
+        <StackPanel Grid.Column="1" Margin="5">
+            <Image Source="C:/Users/Ewa/Desktop/coreldraw/photoshop/projektc#/dgffd.jpg"  Margin="361,10,0,0" Height="195" RenderTransformOrigin="0.5,0.5"/>
+        </StackPanel>
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Top">
+                <Button Name="SzukajButton" Click="SzukajButton_Click" >Search</Button>
+               
+                <Button Name="Wyjdz" Content="Wyjdz" Click="Wyjdz_Click" />
+            </WrapPanel>
+            <FlowDocumentPageViewer Name="fdViewer">
+                <FlowDocument>
+                    <Paragraph FontSize="20">MUFFINY  JAJECZNE Z PAPRYKĄ I SZPINAKIEM</Paragraph>
+                    <Paragraph>•	szklanka liści szpinaku
+•	1/4 cukinii
+•	30 g sera koziego (użyłam pleśniowego) lub fety
+•	1/3 czerwonej papryki
+•	2 jajka
+•	1/2 ząbka czosnku, startego
+•	sól i pieprz
+•	1 łyżka posiekanego szczypiorku (lub 2 łyżki rzeżuchy)
+                    </Paragraph>
+                    <Paragraph>Piekarnik nagrzać do 180 stopni C. Szpinak umyć i osuszyć, posiekać. Cukinię oraz ser kozi zetrzeć na tarce o dużych oczkach. Paprykę pokroić w małą kosteczkę.
+	W misce roztrzepać jajka z dodatkiem czosnku, soli i pieprzu oraz szczypiorku. Dodać szpinak, cukinię, ser kozi oraz paprykę, wymieszać widelcem.
+	Cztery kokilki (lub cztery wgłębienia w formie do muffinów) natłuścić oliwą lub masłem, napełnić masą, piec przez 15 minut. Można też użyć silikonowych foremek bez natłuszczania.
+                    </Paragraph>
+                    <Paragraph></Paragraph>
+                    <Paragraph FontSize="20">BRUSCHETTA</Paragraph>
+                    <Paragraph>•	"lekka" bułka (np. paryska lub ciabatta)
+•	oliwa extra vergine
+•	czosnek
+•	2 pomidory (polecam bawole serce lub malinowe)
+•	cebulka dymka
+•	ok. 80 g sera (gorgoznola, mozzarella, kozi)
+•	bazylia
+                    </Paragraph>
+                    <Paragraph>Pieczywo pokroić na kromki, natrzeć czosnkiem (przekrojonym na pół ząbkiem, lub - jeśli lubimy intensywny smak czosnku - odrobiną startego). Skropić oliwą extra vergine.
+	Pomidory sparzyć i obrać ze skórki. Pokroić w kostkę, odsączyć z nadmiaru soku. Ułożyć na kromkach pieczywa, dodać cieniutko pokrojoną dymkę i ser (w małych kawałkach lub starty).
+	Zapiekać w piekarniku pod grillem ok. 5 minut aż grzanki się zrumienią a ser roztopi. Posypać listkami bazylii, doprawić solą i świeżo mielonym pieprzem.
+                    </Paragraph>
+                </FlowDocument>
+            </FlowDocumentPageViewer>
+
+
+        </DockPanel>
+
+
+    </Grid>
+</Window>

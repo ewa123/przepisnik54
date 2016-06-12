@@ -1,0 +1,59 @@
+﻿<Window x:Class="przepisnik.Obiad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepisnik"
+        mc:Ignorable="d"
+        Title="Obiad" Height="450" Width="580">
+    <Grid>
+
+        <StackPanel Grid.Column="1" Margin="5">
+            <Image Source="C:/Users/Ewa/Desktop/coreldraw/photoshop/projektc#/dgffd.jpg"  Margin="361,10,0,0" Height="195" RenderTransformOrigin="0.5,0.5"/>
+        </StackPanel>
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Top">
+                <Button Name="SzukajButton" Click="SzukajButton_Click" >Search</Button>
+                
+                <Button Name="Wyjdz" Content="Wyjdz" Click="Wyjdz_Click" />
+            </WrapPanel>
+            <FlowDocumentPageViewer Name="fdViewer">
+                <FlowDocument>
+                    <Paragraph FontSize="20">FRITTATA Z SZYNKĄ, SZPINAKIEM I FETĄ</Paragraph>
+                    <Paragraph>•	4 jajka
+•	2 łyżki mleka
+•	1 łyżka posiekanego szczypiorku
+•	100 g szynki (wędliny)
+•	100 g szpinaku
+•	1 ząbek czosnku
+•	1/2 łyżki masła
+•	100 g sera feta lub koziego w zalewie
+•	1/2 łyżeczki papryki w proszku
+                    </Paragraph>
+                    <Paragraph>Piekarnik nagrzać do 180 stopni C. Roztrzepać jajka z mlekiem w misce, doprawić solą i pieprzem, dodać szczypiorek oraz pokrojoną w kosteczkę szynkę i wymieszać.
+	Szpinak umyć, osuszyć. Na małej patelni o średnicy ok. 18 - 20 cm delikatnie podsmażyć na maśle starty czosnek, dodać szpinak i mieszając smażyć przez ok. 2 minuty, aż szpinak zwiędnie.
+	Wlać masę jajeczną i smażyć na małym ogniu przez ok. 2 minuty, następnie posypać pokrojoną w kosteczkę fetą oraz papryką w proszku i wstawić do nagrzanego piekarnika. Piec przez ok. 13 minut.
+                    </Paragraph>
+                    <Paragraph/>
+                    <Paragraph FontSize="20">PLACKI ZIEMNIACZANE</Paragraph>
+                    <Paragraph>•	1/2 kg ziemniaków
+•	1/2 łyżki mąki pszennej
+•	1/4 cebuli
+•	1 jajko
+•	sól
+•	olej roślinny do smażenia
+                    </Paragraph>
+                    <Paragraph>Ziemniaki obrać i zetrzeć na tarce o małych oczkach bezpośrednio do większej i płaskiej miski. Zostawić je w misce bez mieszania, miskę delikatnie przechylić i odstawić tak na ok. 10 - 15 minut.
+	W międzyczasie odlewać zbierający się sok, delikatnie przytrzymując ziemniaki, nadal ich nie mieszać. Na koniec docisnąć dłonią do miski i odlać jeszcze więcej soku. Dodać mąkę, drobno startą cebulę, jajko oraz dwie szczypty soli.
+	Rozgrzać patelnię, wlać olej. Masę ziemniaczaną wymieszać. Nakładać porcje masy (1 pełna łyżka) na rozgrzany olej i rozprowadzać ją na dość cienki placek. Smażyć na średnim ogniu przez ok. 2 - 3 minuty na złoty kolor, przewrócić na drugą stronę i powtórzyć smażenie.
+	Odkładać na talerz wyłożony ręcznikami papierowymi. Posypać solą morską z młynka. Placki ziemniaczane najlepsze są prosto z patelni gdy są chrupiące.
+                    </Paragraph>
+                </FlowDocument>
+            </FlowDocumentPageViewer>
+
+
+        </DockPanel>
+
+
+    </Grid>
+</Window>

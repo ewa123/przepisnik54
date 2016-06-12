@@ -1,0 +1,70 @@
+﻿<Window x:Class="przepisnik.Sniadanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepisnik"
+        mc:Ignorable="d"
+        Title="Sniadanie" Height="450" Width="580">
+    <Grid>
+        <StackPanel Grid.Column="1" Margin="5">
+            <Image Source="C:/Users/Ewa/Desktop/coreldraw/photoshop/projektc#/dgffd.jpg"  Margin="361,10,0,0" Height="195" RenderTransformOrigin="0.5,0.5"/>
+        </StackPanel>
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top">
+                
+                <Button Name="btnSearch" Click="btnSearch_Click">Search</Button>
+                
+                <Button Name="Wyjdz" Content="Wyjdz" Click="Wyjdz_Click" />
+            </WrapPanel>
+        <FlowDocumentPageViewer Name="fdViewer">
+            <FlowDocument >
+                    <Paragraph FontSize="20">PLACUSZKI Z JABŁKAMI</Paragraph>
+                    <Paragraph>• 100g mleka • 1 jajko • 0,5 szkl. mąki pszennej • 1 srednie jabłko</Paragraph>
+                    <Paragraph>• 1/2 łyżeczki cynamonu</Paragraph>
+                    <Paragraph>Jabłko zetrzeć na tarce z grubymi oczkami. 
+W misce wymieszać mąkę z cynamonem, po czym dodać jajko i mleko i wszystko wymieszać dokładnie rózgą lub mikserem. Do masy dodać jabłko i lekko wymieszać.
+Rozgrzać patelnię i nakładać ciasto po jednej łyżce z małymi odstępami. Po chwili przewrócić na drugą stroną, i kiedy będą lekko zarumienione zdjąć z patelni.
+Można polać miodem, posmarować dżemem lub użyć bitej śmietany, a podczas jedzenia cieszyć się przepysznym smakiem.
+                    </Paragraph>
+                    <Paragraph></Paragraph>
+                    <Paragraph></Paragraph>
+                    <Paragraph FontSize="20">BUŁECZKI CYNAMONOWE</Paragraph>
+                    <Paragraph>Ciasto: •	250 ml ciepłego mleka
+•	30 g świeżych drożdży
+•	500 g mąki pszennej
+•	50 g cukru
+•	szczypta soli
+•	1 jajko
+•	2 żółtka
+•	70 g miękkiego masła
+•	do posmarowania: 1 jajko + 2 łyżki mleka
+                    </Paragraph>
+                    <Paragraph>Nadzienie: •	70 g masła
+•	20 g cynamonu w proszku
+•	2 łyżki cukru wanilinowego
+•	1/2 szklanki drobnego cukru (trzcinowego lub białego)
+•	skórka starta z 1/2 cytryny
+
+                    </Paragraph>
+                    <Paragraph>Lukier: •	sok z 1 cytryny
+•	ok. 1 i 1/2 szklanki cukru pudru
+                    </Paragraph>
+                    <Paragraph>
+                        Do ciepłego mleka dodać drożdże i łyżkę cukru, po czym wymieszać. Zaczyn odstawić na 5 minut. 
+Mąkę przesiać do miski, dodać resztę cukru i sól i wymieszać. Dodać jajko, żółtka, tłuszcz i zagnieść na gładką masę, można wspomóc się mikserem. Odstawić ciasto na 1,5h do wyrośnięcia.
+Po tym czasie ciasto podzielić na dwie części, i każde lekko ugnieść. Każdy część rozwałkować na placek o wymiarach 30x30 i przesmarować roztopionym tłuszczem i posypać cynamonem wymieszanym z cukrem waniliowym i drobnym cukrem oraz startą skórką z cytryny.
+Zwinąć ciasto w roladki i każdą pokroić w poprzek na 12 plasterków o grubości ok 2 cm. Wszystkie ułożyć na dużej prostokątnej blaszce w odstępach. Odstawić na 45 min do wyrośnięcia.
+Piekarnik rozgrzać do 180 stopni c. Wierzch bułeczek posmarować roztrzepanym mlekiem z jajkiem i piec ok 20 min. Po upieczeniu polać lukrem.
+
+                    </Paragraph>
+                    
+
+
+
+                </FlowDocument>
+        </FlowDocumentPageViewer>
+           
+        </DockPanel>
+    </Grid>
+</Window>

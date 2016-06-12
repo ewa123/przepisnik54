@@ -1,0 +1,174 @@
+﻿<Window x:Class="przepisnik.Dodaj"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przepisnik"
+        mc:Ignorable="d"
+        Title="Dodaj" Height="450" Width="580">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" Margin="5">
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="0" Margin="5">
+
+            <Label Content="Lista Zakupow" FontSize="20" HorizontalAlignment="Center"/>
+            <StackPanel>
+                <Label Content="PORY DNIA" HorizontalAlignment="Center" Margin="0,15,0,0" />
+                <ComboBox Name="PoryDniaComboBox" Width="100"  />
+            </StackPanel>
+            <!--  <StackPanel>
+                
+                <Button Name="jeden"  Width="100" Content="cos1" Click="jeden_Click"/>
+                    <Button Name="dwa"  Width="100" Content="cos2" Click="dwa_Click"/>
+
+                </StackPanel> -->
+
+            <Button Name="DalejButton" Content="Dalej" Width="100" Margin="0,5,0,0"  Click="DalejButton_Click"  />
+
+            <Label Content="Potrawa" HorizontalAlignment="Center" Margin="0,15,0,0" />
+            <ComboBox Name="PotrawaComboBox" Width="100" />
+
+
+
+            <Button Name="WybierzButton" Content="Wybierz" Width="100"  Margin="0,5,0,0" Click="WybierzButton_Click" />
+            <Button Name="WyjdzButton" Content="Wyjdz" Width="100" Margin="0,40,0,0" Click="WyjdzButton_Click" />
+
+            <StackPanel Grid.Column="1" Margin="5">
+                <Image Source="C:/Users/Ewa/Desktop/coreldraw/photoshop/projektc#/dgffd.jpg"   Height="113" RenderTransformOrigin="0.5,0.5" Margin="0,0,112,0"/>
+            </StackPanel>
+
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1" >
+
+            <StackPanel Margin="10">
+                <Label FontWeight="Bold">LISTA ZAKUPOW</Label>
+                <StackPanel Margin="10,5" Name="Przepis1" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">PLACUSZKI ZJABŁKAMI</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">mleko</CheckBox>
+                        <CheckBox Name="cbFeatureXyz" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jajka</CheckBox>
+                        <CheckBox Name="cbFeatureWww" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maka pszenna</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jablko</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cynamon</CheckBox>
+
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis2" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures2" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">BUŁECZKI CYNAMONOWE</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc2" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">mleko</CheckBox>
+                        <CheckBox Name="cbFeatureXyz2" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">drozdze</CheckBox>
+                        <CheckBox Name="cbFeatureWww2" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maka pszenna</CheckBox>
+                        <CheckBox Name="cbFeatureAbc12" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cukier</CheckBox>
+                        <CheckBox Name="cbFeatureXyz12" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">sol</CheckBox>
+                        <CheckBox Name="cbFeatureWww12" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jajka</CheckBox>
+                        <CheckBox Name="cbFeatureAbc112" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maslo</CheckBox>
+                        <CheckBox Name="cbFeatureXyz112" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cynamon</CheckBox>
+                        <CheckBox Name="cbFeatureWww112" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cukier waniliowy</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1112" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">drobny cukier</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1112" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cytryna</CheckBox>
+                        <CheckBox Name="cbFeatureWww1112" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cukier puder</CheckBox>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis3" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures3" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">FRITTATAZ SZYNKĄ</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc23" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">mleko</CheckBox>
+                        <CheckBox Name="cbFeatureXyz23" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">szczypior</CheckBox>
+                        <CheckBox Name="cbFeatureWww23" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">szynka</CheckBox>
+                        <CheckBox Name="cbFeatureAbc123" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maslo</CheckBox>
+                        <CheckBox Name="cbFeatureXyz123" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">ser feta</CheckBox>
+                        <CheckBox Name="cbFeatureWww123" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jajka</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1123" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">czosnek</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1123" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">papryka w proszku</CheckBox>
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis4" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures4" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">PLACKI ZIEMNIACZANE</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc4" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cebula</CheckBox>
+                        <CheckBox Name="cbFeatureXyz4" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jajka</CheckBox>
+                        <CheckBox Name="cbFeatureWww4" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maka pszenna</CheckBox>
+                        <CheckBox Name="cbFeatureAbc14" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">sol</CheckBox>
+                        <CheckBox Name="cbFeatureXyz14" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">olej</CheckBox>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis5" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures5" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">MUFFINY JAJECZNE</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc25" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">szpinak</CheckBox>
+                        <CheckBox Name="cbFeatureXyz25" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cukinia</CheckBox>
+                        <CheckBox Name="cbFeatureWww25" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">ser kozi</CheckBox>
+                        <CheckBox Name="cbFeatureAbc125" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">czerwona papryka</CheckBox>
+                        <CheckBox Name="cbFeatureXyz125" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">jajka</CheckBox>
+                        <CheckBox Name="cbFeatureWww125" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">czosnek</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1125" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">sól i pieprz</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1125" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">szczypior</CheckBox>
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis6" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures6" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">BRUSCHETTA</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc256" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">oliwa</CheckBox>
+                        <CheckBox Name="cbFeatureXyz256" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">czosnek</CheckBox>
+                        <CheckBox Name="cbFeatureWww256" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">ser</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1256" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">pomidory</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1256" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cebula</CheckBox>
+                        <CheckBox Name="cbFeatureWww1256" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">bazylia</CheckBox>
+
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis7" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures7" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">OWOCE ZAPIEKANE POD KRUSZONKĄ</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc7" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">owoce</CheckBox>
+                        <CheckBox Name="cbFeatureXyz7" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">syrop klonowy</CheckBox>
+                        <CheckBox Name="cbFeatureWww7" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">platki owsiane</CheckBox>
+                        <CheckBox Name="cbFeatureAbc17" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cytryna</CheckBox>
+                        <CheckBox Name="cbFeatureXyz17" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">maslo</CheckBox>
+
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="10,5" Name="Przepis8" Visibility="Collapsed">
+                    <CheckBox IsThreeState="True" Name="cbAllFeatures8" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">SALSA POMIDOROWA</CheckBox>
+                    <StackPanel Margin="20,5">
+                        <CheckBox Name="cbFeatureAbc258" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">zielona papryka</CheckBox>
+                        <CheckBox Name="cbFeatureXyz258" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">czosnek w proszku</CheckBox>
+                        <CheckBox Name="cbFeatureWww258" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">papryczka jalapeno</CheckBox>
+                        <CheckBox Name="cbFeatureAbc1258" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cukier</CheckBox>
+                        <CheckBox Name="cbFeatureXyz1258" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">ocet spirytusowy</CheckBox>
+                        <CheckBox Name="cbFeatureWww1258" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">cebula szalotka</CheckBox>
+                        <CheckBox Name="cbFeatureAbc11258" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">sól i pieprz</CheckBox>
+                        <CheckBox Name="cbFeatureXyz11258" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">mąka ziemniaczana</CheckBox>
+
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+            
+    </Grid>
+</Window>
